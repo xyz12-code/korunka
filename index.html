@@ -4,33 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zubní korunka | Moderní zubní péče postavená na prevenci</title>
-<meta name="description" content="Soukromá zubní klinika Zubní korunka. Zubní lékař, dentální hygiena a individuálně trénovaná orální prevence ITOP. Zdravé zuby nezačínají opravou, ale správnou péčí.">
+<meta name="description" content="Soukromá zubní klinika Zubní korunka. Zubní lékař, dentální hygiena a individuálně trénovaná orální prevence ITOP. Zdravé zuby nezačínají opravou, ale prevencí.">
 <meta name="theme-color" content="#07192D">
 <link rel="canonical" href="https://www.zubnikorunka.cz/">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="cs_CZ">
 <meta property="og:site_name" content="Zubní korunka">
-<meta property="og:title" content="Zubní korunka | Zdravé zuby nezačínají opravou">
-<meta property="og:description" content="Spojujeme moderní stomatologii, dentální hygienu a individuální prevenci ITOP. Nechceme jen řešit vzniklé problémy — chceme jim předcházet.">
+<meta property="og:title" content="Zubní korunka | Moderní zubní péče postavená na prevenci">
+<meta property="og:description" content="Soukromá zubní klinika Zubní korunka. Zubní lékař, dentální hygiena a individuálně trénovaná orální prevence ITOP. Zdravé zuby nezačínají opravou, ale prevencí.">
 <meta property="og:url" content="https://www.zubnikorunka.cz/">
 <meta property="og:image" content="https://www.zubnikorunka.cz/img/og-zubni-korunka.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<!-- Strukturovaná data -->
+<link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dentist",
-  "name": "Zubní korunka",
-  "description": "Soukromá zubní klinika zaměřená na prevenci, dentální hygienu a individuálně trénovanou orální prevenci ITOP.",
+  "name": "Zubn\u00ed korunka",
+  "description": "Soukrom\u00e1 zubn\u00ed klinika zam\u011b\u0159en\u00e1 na prevenci, dent\u00e1ln\u00ed hygienu a individu\u00e1ln\u011b tr\u00e9novanou or\u00e1ln\u00ed prevenci ITOP.",
   "url": "https://www.zubnikorunka.cz/",
   "telephone": "+420XXXXXXXXX",
   "email": "[DOPLNIT]",
@@ -43,570 +40,20 @@
     "postalCode": "[DOPLNIT]",
     "addressCountry": "CZ"
   },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "00:00",
-    "closes": "00:00"
-  }],
   "availableService": [
-    { "@type": "MedicalProcedure", "name": "Preventivní stomatologická prohlídka" },
-    { "@type": "MedicalProcedure", "name": "Dentální hygiena" },
-    { "@type": "MedicalProcedure", "name": "ITOP — individuálně trénovaná orální prevence" }
+    { "@type": "MedicalProcedure", "name": "Preventivn\u00ed stomatologick\u00e1 prohl\u00eddka" },
+    { "@type": "MedicalProcedure", "name": "Dent\u00e1ln\u00ed hygiena" },
+    { "@type": "MedicalProcedure", "name": "ITOP \u2014 individu\u00e1ln\u011b tr\u00e9novan\u00e1 or\u00e1ln\u00ed prevence" }
   ]
 }
 </script>
-
-<style>
-/* =====================================================================
-   ZUBNÍ KORUNKA — DESIGN SYSTEM
-   Navy / Ivory / Champagne gold
-   Signature: tenký zlatý oblouk (abstraktní korunka / křivka úsměvu)
-   ===================================================================== */
-
-:root{
-  /* --- Colors --- */
-  --navy-900:#07192D;
-  --navy-800:#0B2137;
-  --navy-700:#102B46;
-  --navy-600:#1B3B5C;
-
-  --gold:#C6A15B;
-  --gold-deep:#B99755;
-  --gold-light:#DCC08A;
-  --gold-line:rgba(198,161,91,.34);
-  --gold-wash:rgba(198,161,91,.08);
-
-  --ivory:#FAF9F6;
-  --surface:#F5F3EE;
-  --white:#FFFFFF;
-
-  --text:#13202C;
-  --text-soft:#4A5A69;
-  --text-mute:#7A8794;
-  --on-navy:#EAF0F6;
-  --on-navy-soft:rgba(234,240,246,.68);
-
-  --border:#E5E0D6;
-  --border-soft:#EFEBE3;
-  --border-navy:rgba(198,161,91,.22);
-
-  /* --- Type --- */
-  --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
-  --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-
-  --fs-display:clamp(2.45rem,5vw,4.3rem);
-  --fs-h2:clamp(2rem,3.9vw,3.35rem);
-  --fs-h3:clamp(1.35rem,2vw,1.75rem);
-  --fs-lead:clamp(1.02rem,1.25vw,1.18rem);
-  --fs-body:1rem;
-  --fs-small:.875rem;
-  --fs-eyebrow:.72rem;
-
-  /* --- Spacing --- */
-  --s-1:.5rem; --s-2:.75rem; --s-3:1rem; --s-4:1.5rem;
-  --s-5:2rem; --s-6:3rem; --s-7:4rem; --s-8:6rem;
-  --section-y:clamp(4.5rem,9vw,9rem);
-  --container:1280px;
-  --gutter:clamp(1.25rem,4vw,3.5rem);
-
-  /* --- Radius / Shadow --- */
-  --r-sm:3px; --r-md:6px; --r-lg:10px;
-  --sh-1:0 1px 2px rgba(7,25,45,.04),0 8px 24px rgba(7,25,45,.05);
-  --sh-2:0 2px 4px rgba(7,25,45,.05),0 18px 48px rgba(7,25,45,.09);
-  --sh-nav:0 1px 0 rgba(7,25,45,.06),0 12px 30px rgba(7,25,45,.06);
-
-  --ease:cubic-bezier(.22,.61,.36,1);
-}
-
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:96px}
-body{
-  margin:0;background:var(--white);color:var(--text);
-  font-family:var(--body);font-size:var(--fs-body);font-weight:400;
-  line-height:1.72;letter-spacing:-.003em;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;
-}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.015em}
-p{margin:0 0 1.15em}
-p:last-child{margin-bottom:0}
-ul,ol{margin:0;padding:0;list-style:none}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
-::selection{background:var(--gold);color:var(--navy-900)}
-
-.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--navy-900);color:#fff;padding:.85rem 1.4rem}
-.skip:focus{left:1rem;top:1rem}
-
-/* ---------- Layout ---------- */
-.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
-.section{padding-block:var(--section-y);position:relative}
-.section--surface{background:var(--surface)}
-.section--ivory{background:var(--ivory)}
-.section--navy{background:var(--navy-900);color:var(--on-navy)}
-.section--navy h2,.section--navy h3{color:var(--white)}
-.section--navy p{color:var(--on-navy-soft)}
-
-/* ---------- Type helpers ---------- */
-.eyebrow{
-  display:inline-flex;align-items:center;gap:.6rem;
-  font-family:var(--body);font-size:var(--fs-eyebrow);font-weight:500;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);
-  margin:0 0 var(--s-4);line-height:1;
-}
-.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);opacity:.75}
-.section--navy .eyebrow{color:var(--gold-light)}
-h2.h2{font-size:var(--fs-h2)}
-h3.h3{font-size:var(--fs-h3)}
-.lead{font-size:var(--fs-lead);color:var(--text-soft);line-height:1.75;max-width:62ch}
-.section--navy .lead{color:var(--on-navy-soft)}
-.muted{color:var(--text-mute);font-size:var(--fs-small)}
-.serif-em{font-style:italic;color:var(--gold-deep)}
-.measure{max-width:60ch}
-.head{max-width:44ch}
-.head--wide{max-width:56ch}
-
-/* ---------- Signature: zlatý oblouk ---------- */
-.arc{display:block;overflow:visible;pointer-events:none}
-.arc path{fill:none;stroke:var(--gold);stroke-width:1;vector-effect:non-scaling-stroke}
-.rule-arc{width:120px;height:16px;margin-bottom:var(--s-4)}
-.rule-arc path{stroke-width:1.2;opacity:.85}
-
-/* ---------- Buttons ---------- */
-.btn{
-  --btn-bg:var(--navy-900);--btn-fg:#fff;--btn-bd:var(--navy-900);
-  display:inline-flex;align-items:center;justify-content:center;gap:.7rem;
-  padding:1.05rem 1.9rem;min-height:54px;
-  background:var(--btn-bg);color:var(--btn-fg);border:1px solid var(--btn-bd);
-  border-radius:var(--r-sm);
-  font-size:.83rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
-  line-height:1;position:relative;overflow:hidden;
-  transition:background .45s var(--ease),color .45s var(--ease),border-color .45s var(--ease),transform .45s var(--ease);
-}
-.btn span{position:relative;z-index:1;white-space:nowrap}
-.btn::after{
-  content:"";position:absolute;inset:0;background:var(--gold);
-  transform:translateY(101%);transition:transform .5s var(--ease);z-index:0;
-}
-.btn:hover{color:var(--navy-900);border-color:var(--gold)}
-.btn:hover::after{transform:translateY(0)}
-.btn--gold{--btn-bg:var(--gold);--btn-fg:var(--navy-900);--btn-bd:var(--gold)}
-.btn--gold::after{background:var(--navy-900)}
-.btn--gold:hover{color:var(--gold-light);border-color:var(--navy-900)}
-.btn--ghost{--btn-bg:transparent;--btn-fg:var(--text);--btn-bd:rgba(19,32,44,.24)}
-.btn--ghost:hover{color:var(--navy-900)}
-.btn--light{--btn-bg:transparent;--btn-fg:var(--on-navy);--btn-bd:rgba(234,240,246,.32)}
-.btn--light:hover{color:var(--navy-900);border-color:var(--gold)}
-.btn--sm{padding:.85rem 1.4rem;min-height:46px;font-size:.76rem}
-.btn-row{display:flex;flex-wrap:wrap;gap:var(--s-3);margin-top:var(--s-5)}
-
-/* Textový odkaz se zlatým podtržením */
-.link-gold{
-  display:inline-flex;align-items:center;gap:.55rem;position:relative;
-  font-size:.82rem;font-weight:500;letter-spacing:.11em;text-transform:uppercase;
-  color:var(--navy-900);padding-bottom:.4rem;
-}
-.link-gold::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--gold);transform-origin:right;transform:scaleX(1);transition:transform .45s var(--ease)}
-.link-gold:hover::after{transform-origin:left;animation:sweep .6s var(--ease)}
-.link-gold .chev{transition:transform .4s var(--ease)}
-.link-gold:hover .chev{transform:translateX(5px)}
-@keyframes sweep{0%{transform:scaleX(1)}45%{transform:scaleX(0)}46%{transform-origin:left;transform:scaleX(0)}100%{transform-origin:left;transform:scaleX(1)}}
-.section--navy .link-gold{color:var(--gold-light)}
-
-/* ---------- Fotoplaceholder ----------
-   Reálnou fotku vložíte odkomentováním <img> uvnitř .photo   */
-.photo{
-  position:relative;margin:0;overflow:hidden;border-radius:var(--r-md);
-  background:
-    radial-gradient(120% 90% at 78% 12%,rgba(198,161,91,.16),transparent 60%),
-    linear-gradient(155deg,var(--navy-700) 0%,var(--navy-900) 68%);
-  isolation:isolate;
-}
-.photo::before{
-  content:"";position:absolute;inset:0;
-  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px);
-  background-size:100% 9px;opacity:.5;
-}
-.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
-.photo__tag{
-  position:absolute;left:1.25rem;bottom:1.15rem;z-index:3;
-  font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
-  color:rgba(234,240,246,.5);border-left:1px solid var(--gold);padding-left:.7rem;line-height:1.5;
-}
-.photo:has(img) .photo__tag,.photo:has(img)::before{display:none}
-.photo--portrait{aspect-ratio:4/5}
-.photo--square{aspect-ratio:1/1}
-.photo--wide{aspect-ratio:16/10}
-.photo--tall{aspect-ratio:3/4}
-
-/* =====================================================================
-   HEADER
-   ===================================================================== */
-.header{
-  position:fixed;inset:0 0 auto;z-index:100;
-  transition:background .45s var(--ease),box-shadow .45s var(--ease),padding .45s var(--ease);
-  padding-block:1.25rem;
-}
-.header.is-stuck{background:rgba(250,249,246,.94);backdrop-filter:blur(14px);box-shadow:var(--sh-nav);padding-block:.7rem}
-.header__inner{display:flex;align-items:center;gap:var(--s-4);justify-content:space-between}
-.brand{display:inline-flex;align-items:center;gap:.75rem;flex-shrink:0}
-.brand__mark{width:34px;height:26px;flex-shrink:0}
-.brand__mark path{fill:none;stroke:var(--gold);stroke-width:1.4}
-.brand__name{font-family:var(--display);font-size:1.3rem;letter-spacing:.03em;line-height:1;color:var(--navy-900)}
-.brand__name em{font-style:normal;display:block;font-family:var(--body);font-size:.55rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-deep);margin-top:.32rem}
-
-.nav{display:flex;align-items:center;gap:clamp(.9rem,1.5vw,1.6rem)}
-.nav a{position:relative;white-space:nowrap;font-size:.81rem;font-weight:400;letter-spacing:.05em;color:var(--text-soft);padding-block:.35rem;transition:color .3s var(--ease)}
-.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
-.nav a:hover,.nav a[aria-current="true"]{color:var(--navy-900)}
-.nav a:hover::after,.nav a[aria-current="true"]::after{transform:scaleX(1);transform-origin:left}
-.header__cta{display:flex;align-items:center;gap:var(--s-3)}
-.header__tel{font-size:.82rem;letter-spacing:.04em;color:var(--text-soft);white-space:nowrap;transition:color .3s var(--ease)}
-.header__tel:hover{color:var(--gold-deep)}
-
-.burger{display:none;width:46px;height:46px;align-items:center;justify-content:center;flex-direction:column;gap:6px;border:1px solid var(--border);border-radius:var(--r-sm)}
-.burger span{display:block;width:18px;height:1px;background:var(--navy-900);transition:transform .4s var(--ease),opacity .3s var(--ease)}
-.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(3.5px) rotate(45deg)}
-.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
-.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-3.5px) rotate(-45deg)}
-
-.mobile-nav{
-  position:fixed;inset:0;z-index:99;background:var(--navy-900);color:var(--on-navy);
-  padding:7rem var(--gutter) 3rem;display:flex;flex-direction:column;
-  opacity:0;visibility:hidden;transform:translateY(-12px);
-  transition:opacity .4s var(--ease),transform .5s var(--ease),visibility .4s;
-  overflow-y:auto;
-}
-.mobile-nav.is-open{opacity:1;visibility:visible;transform:none}
-.mobile-nav a.mlink{
-  font-family:var(--display);font-size:1.9rem;color:var(--white);
-  padding:.55rem 0;border-bottom:1px solid rgba(198,161,91,.16);display:flex;justify-content:space-between;align-items:baseline;
-}
-.mobile-nav a.mlink i{font-style:normal;font-family:var(--body);font-size:.6rem;letter-spacing:.16em;color:var(--gold);opacity:.65}
-.mobile-nav__foot{margin-top:auto;padding-top:2rem;display:grid;gap:.75rem}
-
-/* =====================================================================
-   HERO
-   ===================================================================== */
-.hero{position:relative;background:var(--ivory);padding-top:clamp(8rem,14vw,11rem);padding-bottom:clamp(4rem,8vw,7rem);overflow:hidden}
-.hero__panel{
-  position:absolute;top:92px;bottom:26%;right:0;width:38%;
-  background:linear-gradient(170deg,var(--navy-800),var(--navy-900));
-  z-index:0;
-}
-.hero__panel-arc{position:absolute;top:12%;right:-6%;width:70%;height:60%;z-index:1;opacity:.55}
-.hero__inner{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(2rem,5vw,5rem);align-items:center}
-.hero__title{font-size:var(--fs-display);line-height:1.02;letter-spacing:-.022em;color:var(--navy-900)}
-.hero__title .l2{display:block;font-style:italic;color:var(--gold-deep);font-weight:300}
-.hero__text{max-width:46ch;margin-top:var(--s-4);font-size:var(--fs-lead);color:var(--text-soft)}
-.hero__meta{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:clamp(2.2rem,4vw,3.2rem);padding-top:1.4rem;border-top:1px solid var(--border)}
-.hero__meta span{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text-mute);display:inline-flex;align-items:center;gap:.55rem}
-.hero__meta span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
-.hero__media{position:relative}
-.hero__photo{aspect-ratio:4/5;box-shadow:var(--sh-2);border-radius:var(--r-md)}
-.hero__photo .photo__tag{bottom:auto;top:1.25rem}
-.hero__badge{
-  position:absolute;left:clamp(-2.5rem,-3vw,-1rem);bottom:clamp(1.5rem,4vw,3rem);z-index:4;
-  background:var(--white);padding:1.5rem 1.7rem;max-width:270px;border-radius:var(--r-md);
-  box-shadow:var(--sh-2);border-top:2px solid var(--gold);
-}
-.hero__badge p{font-family:var(--display);font-size:1.22rem;line-height:1.32;color:var(--navy-900);margin:0}
-.hero__badge small{display:block;margin-top:.7rem;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep)}
-
-/* =====================================================================
-   STATEMENT + PILÍŘE
-   ===================================================================== */
-.statement{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,6rem);align-items:start}
-.statement__title{font-size:var(--fs-h2);color:var(--navy-900)}
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:clamp(3rem,6vw,5rem);border-top:1px solid var(--border)}
-.pillar{padding:clamp(1.75rem,3vw,2.5rem) clamp(1.25rem,2.5vw,2.25rem);border-right:1px solid var(--border);position:relative;transition:background .5s var(--ease)}
-.pillar:last-child{border-right:0}
-.pillar::before{content:"";position:absolute;top:-1px;left:0;width:100%;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease)}
-.pillar:hover{background:var(--ivory)}
-.pillar:hover::before{transform:scaleX(1)}
-.pillar h3{font-family:var(--body);font-size:.76rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:.9rem}
-.pillar p{font-family:var(--display);font-size:1.32rem;line-height:1.4;color:var(--navy-900)}
-
-/* =====================================================================
-   NÁŠ PŘÍSTUP
-   ===================================================================== */
-.approach{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
-.approach__media{position:relative}
-.approach__photo{aspect-ratio:3/4;border-radius:var(--r-md);box-shadow:var(--sh-1)}
-.approach__quote{
-  position:absolute;right:clamp(-1.5rem,-2vw,0rem);bottom:2rem;z-index:3;
-  background:var(--navy-900);color:var(--white);padding:1.5rem 1.7rem;max-width:250px;border-radius:var(--r-md);
-}
-.approach__quote p{font-family:var(--display);font-size:1.15rem;line-height:1.4;color:var(--white)}
-.steps{margin-top:clamp(2rem,4vw,3rem);display:grid;gap:0}
-.step{display:grid;grid-template-columns:auto 1fr;gap:1.4rem;align-items:baseline;padding:1.15rem 0;border-bottom:1px solid var(--border)}
-.step:first-child{border-top:1px solid var(--border)}
-.step__num{font-family:var(--display);font-size:1.5rem;color:var(--gold);letter-spacing:.02em;min-width:2.2rem}
-.step__name{font-family:var(--display);font-size:1.5rem;color:var(--navy-900)}
-.step__desc{grid-column:2;font-size:.93rem;color:var(--text-soft);margin-top:.15rem}
-
-/* =====================================================================
-   ITOP (navy)
-   ===================================================================== */
-.itop__head{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,5rem);align-items:end;margin-bottom:clamp(3rem,6vw,5rem)}
-.itop__title{font-size:var(--fs-h2);color:var(--white)}
-.itop__title .sub{display:block;font-style:italic;color:var(--gold-light);font-weight:300}
-.itop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(198,161,91,.22);border:1px solid rgba(198,161,91,.22)}
-.itop-card{background:var(--navy-900);padding:clamp(1.75rem,2.6vw,2.4rem);position:relative;transition:background .55s var(--ease)}
-.itop-card:hover{background:var(--navy-800)}
-.itop-card__num{font-family:var(--display);font-size:2.6rem;line-height:1;color:var(--gold);opacity:.85;display:block;margin-bottom:1.4rem}
-.itop-card h3{font-family:var(--display);font-size:1.32rem;color:var(--white);margin-bottom:.7rem;line-height:1.25}
-.itop-card p{font-size:.92rem;color:var(--on-navy-soft);line-height:1.68}
-.itop-card__arc{position:absolute;right:1.2rem;top:1.4rem;width:44px;height:22px;opacity:.32}
-.pull{
-  margin-top:clamp(3rem,6vw,5rem);padding:clamp(2.2rem,4vw,3.4rem) clamp(1.5rem,4vw,4rem);
-  border:1px solid rgba(198,161,91,.28);text-align:center;position:relative;
-}
-.pull p{font-family:var(--display);font-size:clamp(1.45rem,2.7vw,2.3rem);line-height:1.34;color:var(--white);max-width:34ch;margin:0 auto}
-.pull .rule-arc{margin:0 auto var(--s-4)}
-
-/* =====================================================================
-   SLUŽBY
-   ===================================================================== */
-.services{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,3vw,2.5rem);margin-top:clamp(2.5rem,5vw,4rem)}
-.service{border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden;background:var(--white);display:flex;flex-direction:column;transition:box-shadow .5s var(--ease),transform .5s var(--ease)}
-.service:hover{box-shadow:var(--sh-2);transform:translateY(-4px)}
-.service__photo{aspect-ratio:16/9;border-radius:0}
-.service__body{padding:clamp(1.75rem,3vw,2.6rem);display:flex;flex-direction:column;flex:1}
-.service h3{font-size:clamp(1.7rem,2.4vw,2.15rem);color:var(--navy-900);margin-bottom:.9rem}
-.service__list{margin:1.6rem 0 0;display:grid;gap:.55rem}
-.service__list li{display:grid;grid-template-columns:auto 1fr;gap:.75rem;font-size:.93rem;color:var(--text-soft);align-items:baseline}
-.service__list li::before{content:"";width:14px;height:1px;background:var(--gold);transform:translateY(-4px)}
-.service .btn{margin-top:clamp(1.75rem,3vw,2.4rem);align-self:flex-start}
-
-/* =====================================================================
-   OBJEDNÁNÍ
-   ===================================================================== */
-.book{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,3vw,2rem);margin-top:clamp(2.5rem,5vw,3.5rem)}
-.book-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);padding:clamp(1.75rem,3vw,2.6rem);position:relative;overflow:hidden;transition:border-color .5s var(--ease),box-shadow .5s var(--ease)}
-.book-card::before{content:"";position:absolute;left:0;top:0;height:100%;width:2px;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform .55s var(--ease)}
-.book-card:hover{border-color:var(--gold-line);box-shadow:var(--sh-1)}
-.book-card:hover::before{transform:scaleY(1)}
-.book-card h3{font-size:clamp(1.5rem,2.2vw,1.95rem);color:var(--navy-900);margin-bottom:.6rem}
-.book-card .tel{display:inline-flex;align-items:baseline;gap:.6rem;margin-top:1.4rem;font-family:var(--display);font-size:1.65rem;color:var(--navy-900);transition:color .35s var(--ease)}
-.book-card .tel:hover{color:var(--gold-deep)}
-.book-note{margin-top:clamp(1.5rem,3vw,2rem);padding:1.15rem 1.35rem;background:var(--gold-wash);border-left:2px solid var(--gold);font-size:.92rem;color:var(--text-soft)}
-
-/* Formulář */
-.form{margin-top:clamp(2.5rem,5vw,4rem);background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);padding:clamp(1.75rem,4vw,3rem)}
-.form__grid{display:grid;grid-template-columns:1fr 1fr;gap:1.15rem}
-.field{display:flex;flex-direction:column;gap:.5rem}
-.field--full{grid-column:1/-1}
-.field label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-mute)}
-.field input,.field textarea,.field select{
-  font:inherit;font-size:.95rem;color:var(--text);background:var(--ivory);
-  border:1px solid var(--border);border-radius:var(--r-sm);padding:.9rem 1rem;width:100%;
-  transition:border-color .35s var(--ease),background .35s var(--ease);
-}
-.field textarea{min-height:120px;resize:vertical}
-.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);background:var(--white);outline:none}
-.choice{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
-.choice input{position:absolute;opacity:0;pointer-events:none}
-.choice label{
-  display:flex;align-items:center;gap:.7rem;padding:1rem 1.1rem;cursor:pointer;
-  border:1px solid var(--border);border-radius:var(--r-sm);background:var(--ivory);
-  font-size:.9rem;letter-spacing:0;text-transform:none;color:var(--text);
-  transition:border-color .35s var(--ease),background .35s var(--ease);
-}
-.choice label::before{content:"";width:14px;height:14px;border-radius:50%;border:1px solid var(--text-mute);flex-shrink:0;transition:all .3s var(--ease)}
-.choice input:checked + label{border-color:var(--gold);background:var(--white)}
-.choice input:checked + label::before{border-color:var(--gold);background:var(--gold);box-shadow:inset 0 0 0 3px var(--white)}
-.choice input:focus-visible + label{outline:2px solid var(--gold);outline-offset:3px}
-.form__foot{display:flex;flex-wrap:wrap;align-items:center;gap:1.25rem;margin-top:1.75rem}
-.form__note{font-size:.78rem;color:var(--text-mute);max-width:44ch}
-
-/* =====================================================================
-   TÝM
-   ===================================================================== */
-.team{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.75rem,4vw,3.5rem);margin-top:clamp(2.5rem,5vw,4rem)}
-.member__photo{aspect-ratio:4/5;border-radius:var(--r-md);margin-bottom:1.4rem}
-.member__role{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:.6rem}
-.member h3{font-size:clamp(1.5rem,2.2vw,1.95rem);color:var(--navy-900);margin-bottom:.7rem}
-
-/* =====================================================================
-   PRVNÍ NÁVŠTĚVA
-   ===================================================================== */
-.visit{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:clamp(2.5rem,5vw,4rem);border-top:1px solid var(--border)}
-.visit__item{padding:clamp(1.75rem,3vw,2.4rem) clamp(1rem,2vw,1.8rem) 0;border-right:1px solid var(--border);position:relative}
-.visit__item:last-child{border-right:0}
-.visit__item .n{font-family:var(--display);font-size:1.05rem;color:var(--gold);display:block;margin-bottom:1rem}
-.visit__item h3{font-family:var(--display);font-size:1.4rem;color:var(--navy-900);margin-bottom:.6rem}
-.visit__item p{font-size:.92rem;color:var(--text-soft)}
-.visit__dot{position:absolute;top:-4px;left:clamp(1rem,2vw,1.8rem);width:7px;height:7px;border-radius:50%;background:var(--gold)}
-
-/* =====================================================================
-   CENÍK
-   ===================================================================== */
-.price-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);margin-top:clamp(2.5rem,5vw,4rem)}
-.price-col h3{font-size:clamp(1.5rem,2.2vw,1.9rem);color:var(--navy-900);padding-bottom:1rem;border-bottom:1px solid var(--navy-900)}
-.price-list li{display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;padding:1.05rem 0;border-bottom:1px solid var(--border-soft)}
-.price-list .item{font-size:.98rem;color:var(--text)}
-.price-list .val{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);white-space:nowrap;flex-shrink:0}
-.price-foot{margin-top:clamp(2rem,4vw,3rem);font-size:.88rem;color:var(--text-mute);max-width:70ch}
-
-/* =====================================================================
-   GALERIE
-   ===================================================================== */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.75rem,1.4vw,1.15rem);margin-top:clamp(2.5rem,5vw,4rem)}
-.gallery .photo{transition:transform .7s var(--ease)}
-.gallery .photo::after{content:"";position:absolute;inset:0;z-index:4;background:linear-gradient(0deg,rgba(7,25,45,.42),transparent 55%);opacity:0;transition:opacity .5s var(--ease)}
-.gallery .photo:hover{transform:scale(1.015)}
-.gallery .photo:hover::after{opacity:1}
-.g1{grid-column:span 2;grid-row:span 2;aspect-ratio:1/1}
-.g2{grid-column:span 2;aspect-ratio:2/1}
-.g3,.g4{aspect-ratio:1/1}
-.g5{grid-column:span 2;aspect-ratio:2/1}
-.g6{grid-column:span 2;aspect-ratio:2/1}
-
-/* =====================================================================
-   FAQ
-   ===================================================================== */
-.faq{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,6rem);align-items:start}
-.acc{border-top:1px solid var(--border)}
-.acc__item{border-bottom:1px solid var(--border)}
-.acc__btn{
-  width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;
-  padding:1.35rem 0;text-align:left;font-family:var(--display);font-size:clamp(1.15rem,1.7vw,1.4rem);
-  color:var(--navy-900);line-height:1.35;transition:color .35s var(--ease);
-}
-.acc__btn:hover{color:var(--gold-deep)}
-.acc__icon{position:relative;width:16px;height:16px;flex-shrink:0;margin-top:.45rem}
-.acc__icon::before,.acc__icon::after{content:"";position:absolute;background:var(--gold);transition:transform .45s var(--ease)}
-.acc__icon::before{top:50%;left:0;width:16px;height:1px;transform:translateY(-50%)}
-.acc__icon::after{left:50%;top:0;width:1px;height:16px;transform:translateX(-50%)}
-.acc__btn[aria-expanded="true"] .acc__icon::after{transform:translateX(-50%) scaleY(0)}
-.acc__panel{overflow:hidden;height:0;transition:height .45s var(--ease)}
-.acc__panel > div{padding:0 3rem 1.5rem 0;font-size:.96rem;color:var(--text-soft)}
-
-/* =====================================================================
-   KONTAKT
-   ===================================================================== */
-.contact{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
-.contact__list{display:grid;gap:1.5rem;margin-top:clamp(2rem,4vw,2.75rem)}
-.contact__row{display:grid;grid-template-columns:136px 1fr;gap:1.25rem;align-items:start;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
-.contact__row:last-child{border-bottom:0;padding-bottom:0}
-.contact__k{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);padding-top:.35rem}
-.contact__v{font-family:var(--display);font-size:1.3rem;color:var(--navy-900);line-height:1.45}
-.contact__v span{display:block;font-family:var(--body);font-size:.92rem;color:var(--text-soft);line-height:1.7}
-.contact__v a{transition:color .35s var(--ease)}
-.contact__v a:hover{color:var(--gold-deep)}
-.map{aspect-ratio:4/3;border-radius:var(--r-md);overflow:hidden;background:var(--navy-900);position:relative;display:grid;place-items:center;text-align:center;padding:2rem}
-.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.map__ph{color:var(--on-navy-soft);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;line-height:2}
-.map__ph strong{display:block;font-family:var(--display);font-size:1.5rem;letter-spacing:0;text-transform:none;color:var(--white);margin-bottom:.6rem}
-
-/* =====================================================================
-   FINÁLNÍ CTA + FOOTER
-   ===================================================================== */
-.final{text-align:center;position:relative;overflow:hidden}
-.final .arc-big{position:absolute;left:50%;top:-30%;transform:translateX(-50%);width:min(1000px,120%);height:90%;opacity:.28;z-index:0}
-.final__inner{position:relative;z-index:1}
-.final h2{font-size:clamp(2.3rem,5vw,4.2rem);color:var(--white);line-height:1.05}
-.final h2 em{font-style:italic;color:var(--gold-light);font-weight:300}
-.final p{margin:1.5rem auto 0;max-width:46ch}
-.final .btn-row{justify-content:center}
-.final__tel{margin-top:2.25rem;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--on-navy-soft)}
-.final__tel a{color:var(--gold-light);border-bottom:1px solid rgba(198,161,91,.4);padding-bottom:2px}
-
-.footer{background:var(--navy-800);color:var(--on-navy-soft);padding-block:clamp(3.5rem,6vw,5rem) 2rem}
-.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:clamp(2rem,4vw,3.5rem)}
-.footer .brand__name{color:var(--white)}
-.footer__claim{margin-top:1.4rem;max-width:30ch;font-size:.93rem;color:var(--on-navy-soft)}
-.footer h4{font-family:var(--body);font-size:.7rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:1.25rem}
-.footer ul{display:grid;gap:.65rem}
-.footer li,.footer a{font-size:.9rem;color:var(--on-navy-soft);transition:color .3s var(--ease)}
-.footer a:hover{color:var(--gold-light)}
-.footer__bottom{margin-top:clamp(2.5rem,5vw,4rem);padding-top:1.75rem;border-top:1px solid rgba(234,240,246,.12);display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;font-size:.8rem}
-.footer__legal{display:flex;flex-wrap:wrap;gap:1.5rem}
-
-/* Mobilní sticky lišta */
-.mbar{
-  position:fixed;left:0;right:0;bottom:0;z-index:95;display:none;
-  grid-template-columns:1fr 1fr;gap:1px;background:rgba(198,161,91,.3);
-  box-shadow:0 -6px 24px rgba(7,25,45,.14);
-  padding-bottom:env(safe-area-inset-bottom);
-}
-.mbar a{display:flex;align-items:center;justify-content:center;gap:.55rem;padding:1.05rem .5rem;background:var(--navy-900);color:var(--white);font-size:.76rem;letter-spacing:.12em;text-transform:uppercase}
-.mbar a.is-gold{background:var(--gold);color:var(--navy-900)}
-
-/* =====================================================================
-   REVEAL
-   ===================================================================== */
-.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.rv.in{opacity:1;transform:none}
-.rv-d1{transition-delay:.09s}.rv-d2{transition-delay:.18s}.rv-d3{transition-delay:.27s}.rv-d4{transition-delay:.36s}
-
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
-  .rv{opacity:1;transform:none}
-}
-
-/* =====================================================================
-   RESPONSIVE
-   ===================================================================== */
-@media (max-width:1520px){ .header__tel{display:none} }
-@media (max-width:1260px){ .nav a{font-size:.77rem} }
-@media (max-width:1140px){
-  .nav,.header__cta .btn{display:none}
-  .burger{display:flex}
-}
-@media (max-width:1024px){
-  .hero__panel{display:none}
-  .hero__inner{grid-template-columns:1fr;gap:2.5rem}
-  .hero{background:linear-gradient(180deg,var(--ivory) 55%,var(--surface))}
-  .hero__media::before{content:"";position:absolute;left:-14px;right:-14px;top:-14px;height:140px;border:1px solid var(--gold-line);border-bottom:0;border-radius:var(--r-md) var(--r-md) 0 0;z-index:0}
-  .hero__media{max-width:none}
-  .hero__photo{aspect-ratio:16/10}
-  .hero__badge{left:auto;right:-1rem}
-  .statement,.approach,.faq,.contact,.itop__head{grid-template-columns:1fr}
-  .itop-grid{grid-template-columns:repeat(2,1fr)}
-  .visit{grid-template-columns:repeat(2,1fr)}
-  .visit__item{border-bottom:1px solid var(--border);padding-bottom:2rem}
-  .visit__item:nth-child(2){border-right:0}
-  .price-wrap{grid-template-columns:1fr;gap:3rem}
-  .footer__grid{grid-template-columns:1fr 1fr}
-}
-@media (max-width:760px){
-  html{scroll-padding-top:80px}
-  body{padding-bottom:64px}
-  .mbar{display:grid}
-  .hero{padding-top:7rem}
-  .hero__photo{aspect-ratio:4/5}
-  .hero__badge{position:static;max-width:none;margin-top:1.25rem;box-shadow:var(--sh-1)}
-  .pillars{grid-template-columns:1fr}
-  .pillar{border-right:0;border-bottom:1px solid var(--border)}
-  .pillar:last-child{border-bottom:0}
-  .services,.book,.team,.gallery,.form__grid,.choice{grid-template-columns:1fr}
-  .itop-grid{grid-template-columns:1fr}
-  .visit{grid-template-columns:1fr}
-  .visit__item{border-right:0}
-  .approach__quote{position:static;max-width:none;margin-top:1.25rem}
-  .gallery .photo{aspect-ratio:4/3!important;grid-column:auto!important;grid-row:auto!important}
-  .footer__grid{grid-template-columns:1fr;gap:2.5rem}
-  .acc__panel > div{padding-right:1rem}
-  .btn{width:100%}
-  .btn-row{flex-direction:column}
-  .service .btn{align-self:stretch}
-  .contact__row{grid-template-columns:1fr;gap:.4rem}
-  .form__foot .btn{width:100%}
-}
-</style>
 </head>
 <body>
 <a class="skip" href="#main">Přeskočit na hlavní obsah</a>
 
-<!-- ============================ HEADER ============================ -->
 <header class="header" id="header">
   <div class="container header__inner">
-    <a class="brand" href="#top" aria-label="Zubní korunka — úvodní stránka">
+    <a class="brand" href="index.html" aria-label="Zubní korunka — úvodní stránka">
       <svg class="brand__mark" viewBox="0 0 34 26" aria-hidden="true">
         <path d="M2 25 C2 10 8.5 2 17 2 C25.5 2 32 10 32 25" stroke-linecap="round"/>
         <path d="M9.5 25 C9.5 17 12.5 12 17 12 C21.5 12 24.5 17 24.5 25" opacity=".55" stroke-linecap="round"/>
@@ -615,19 +62,19 @@ h3.h3{font-size:var(--fs-h3)}
     </a>
 
     <nav class="nav" id="nav" aria-label="Hlavní navigace">
-      <a href="#o-nas">O nás</a>
-      <a href="#itop">Prevence &amp; ITOP</a>
-      <a href="#sluzby">Zubní péče</a>
-      <a href="#sluzby-hygiena">Dentální hygiena</a>
-      <a href="#tym">Náš tým</a>
-      <a href="#cenik">Ceník</a>
-      <a href="#pro-pacienty">Pro pacienty</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="index.html#o-nas" aria-current="page">O nás</a>
+      <a href="itop.html">ITOP</a>
+      <a href="zubni-pece.html">Zubní péče</a>
+      <a href="dentalni-hygiena.html">Dentální hygiena</a>
+      <a href="tym.html">Náš tým</a>
+      <a href="cenik.html">Ceník</a>
+      <a href="pro-pacienty.html">Pro pacienty</a>
+      <a href="index.html#kontakt">Kontakt</a>
     </nav>
 
     <div class="header__cta">
       <a class="header__tel" href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a>
-      <a class="btn btn--sm" href="#objednani"><span>Objednat se</span></a>
+      <a class="btn btn--sm" href="index.html#objednani"><span>Objednat se</span></a>
       <button class="burger" id="burger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Otevřít menu">
         <span></span><span></span><span></span>
       </button>
@@ -635,27 +82,25 @@ h3.h3{font-size:var(--fs-h3)}
   </div>
 </header>
 
-<!-- ========================= MOBILNÍ MENU ========================= -->
 <div class="mobile-nav" id="mobile-nav">
   <nav aria-label="Mobilní navigace">
-    <a class="mlink" href="#o-nas">O nás <i>01</i></a>
-    <a class="mlink" href="#itop">Prevence &amp; ITOP <i>02</i></a>
-    <a class="mlink" href="#sluzby">Zubní péče <i>03</i></a>
-    <a class="mlink" href="#sluzby-hygiena">Dentální hygiena <i>04</i></a>
-    <a class="mlink" href="#tym">Náš tým <i>05</i></a>
-    <a class="mlink" href="#cenik">Ceník <i>06</i></a>
-    <a class="mlink" href="#pro-pacienty">Pro pacienty <i>07</i></a>
-    <a class="mlink" href="#kontakt">Kontakt <i>08</i></a>
+    <a class="mlink" href="index.html#o-nas">O nás <i>01</i></a>
+    <a class="mlink" href="itop.html">ITOP <i>02</i></a>
+    <a class="mlink" href="zubni-pece.html">Zubní péče <i>03</i></a>
+    <a class="mlink" href="dentalni-hygiena.html">Dentální hygiena <i>04</i></a>
+    <a class="mlink" href="tym.html">Náš tým <i>05</i></a>
+    <a class="mlink" href="cenik.html">Ceník <i>06</i></a>
+    <a class="mlink" href="pro-pacienty.html">Pro pacienty <i>07</i></a>
+    <a class="mlink" href="index.html#kontakt">Kontakt <i>08</i></a>
   </nav>
   <div class="mobile-nav__foot">
-    <a class="btn btn--gold" href="#objednani"><span>Objednat se</span></a>
+    <a class="btn btn--gold" href="index.html#objednani"><span>Objednat se</span></a>
     <a class="btn btn--light" href="tel:+420XXXXXXXXX"><span>+420 XXX XXX XXX</span></a>
   </div>
 </div>
 
 <main id="main">
 
-<!-- ============================= HERO ============================= -->
 <section class="hero" id="top">
   <div class="hero__panel" aria-hidden="true">
     <svg class="arc hero__panel-arc" viewBox="0 0 500 220" preserveAspectRatio="none" aria-hidden="true">
@@ -669,15 +114,15 @@ h3.h3{font-size:var(--fs-h3)}
       <p class="eyebrow rv">Soukromá zubní klinika</p>
       <h1 class="hero__title rv rv-d1">
         Zdravé zuby<br>nezačínají opravou.
-        <span class="l2">Začínají správnou péčí.</span>
+        <span class="l2">Začínají prevencí.</span>
       </h1>
       <p class="hero__text rv rv-d2">
-        V Zubní korunce spojujeme moderní stomatologii, dentální hygienu a individuální
-        prevenci. Nechceme jen řešit vzniklé problémy — chceme vám pomoci jim předcházet.
+        Moderní stomatologie a dentální hygiena zaměřená nejen na řešení problémů,
+        ale především na jejich prevenci.
       </p>
       <div class="btn-row rv rv-d3">
         <a class="btn" href="#objednani"><span>Objednat se</span></a>
-        <a class="btn btn--ghost" href="#o-nas"><span>Poznejte náš přístup</span></a>
+        <a class="btn btn--ghost" href="#o-nas"><span>Náš přístup</span></a>
       </div>
       <div class="hero__meta rv rv-d4">
         <span>Zubní lékař</span>
@@ -688,10 +133,9 @@ h3.h3{font-size:var(--fs-h3)}
 
     <div class="hero__media rv rv-d2">
       <figure class="photo hero__photo" role="img" aria-label="Interiér ordinace Zubní korunka">
-        <!-- Reálná fotografie: odkomentujte a doplňte cestu
-        <img src="img/hero-ordinace.jpg" alt="Interiér ordinace Zubní korunka" width="1000" height="1250" fetchpriority="high" decoding="async"> -->
-        <figcaption class="photo__tag">Foto — ordinace<br>[DOPLNIT]</figcaption>
-      </figure>
+    <!-- <img src="img/hero-ordinace.jpg" alt="Interiér ordinace Zubní korunka" loading="lazy" decoding="async"> -->
+    <figcaption class="photo__tag">Foto — ordinace<br>[DOPLNIT]</figcaption>
+  </figure>
       <div class="hero__badge">
         <p>Méně oprav.<br>Více prevence.</p>
         <small>Naše filozofie</small>
@@ -700,24 +144,26 @@ h3.h3{font-size:var(--fs-h3)}
   </div>
 </section>
 
-<!-- ===================== STATEMENT + PILÍŘE ====================== -->
 <section class="section" id="o-nas">
   <div class="container">
-    <div class="statement">
-      <div class="rv">
-        <p class="eyebrow">O nás</p>
-        <h2 class="statement__title">Zubní péče nemusí být nekonečný koloběh oprav.</h2>
+    <div class="approach">
+      <div class="approach__media rv">
+        <figure class="photo approach__photo" role="img" aria-label="Konzultace s pacientem v ordinaci Zubní korunka">
+    <!-- <img src="img/pristup-konzultace.jpg" alt="Konzultace s pacientem v ordinaci Zubní korunka" loading="lazy" decoding="async"> -->
+    <figcaption class="photo__tag">Foto — konzultace<br>[DOPLNIT]</figcaption>
+  </figure>
+        <div class="approach__quote">
+          <p>Hledáme příčinu, ne jen následek.</p>
+        </div>
       </div>
+
       <div class="rv rv-d1">
-        <p class="lead">
-          Věříme, že nejlepší zákrok je ten, kterému se podaří předejít. Proto spojujeme
-          kvalitní stomatologii s důslednou prevencí a individuální edukací.
+        <p class="eyebrow">Náš přístup</p>
+        <h2 class="h2 head">Nechceme jen opravovat následky.</h2>
+        <p class="lead" style="margin-top:1.5rem">
+          Věříme, že nejlepší péče začíná ještě před vznikem problému. Proto spojujeme
+          moderní stomatologii, dentální hygienu a individuální prevenci.
         </p>
-        <p class="lead">
-          Pacient u nás neodchází pouze s vyčištěnými zuby. Odchází s tím, že rozumí
-          svým ústům — ví, kde má při domácí péči rezervy a co konkrétně s tím může dělat.
-        </p>
-        <a class="link-gold" href="#itop" style="margin-top:1.25rem">Více o ITOP <span class="chev" aria-hidden="true">→</span></a>
       </div>
     </div>
 
@@ -728,69 +174,16 @@ h3.h3{font-size:var(--fs-h3)}
       </article>
       <article class="pillar rv rv-d1">
         <h3>Preciznost</h3>
-        <p>Moderní péče postavená na detailu.</p>
+        <p>Moderní péče založená na detailu.</p>
       </article>
       <article class="pillar rv rv-d2">
         <h3>Individuální přístup</h3>
-        <p>Každý pacient potřebuje trochu něco jiného.</p>
+        <p>Každý pacient potřebuje trochu jinou péči.</p>
       </article>
     </div>
   </div>
 </section>
-<!-- ========================== NÁŠ PŘÍSTUP ======================== -->
-<section class="section section--surface" id="pristup">
-  <div class="container approach">
-    <div class="approach__media rv">
-      <figure class="photo approach__photo" role="img" aria-label="Konzultace s pacientem v ordinaci">
-        <!-- <img src="img/pristup-konzultace.jpg" alt="Konzultace s pacientem v ordinaci Zubní korunka" loading="lazy" decoding="async"> -->
-        <figcaption class="photo__tag">Foto — konzultace<br>[DOPLNIT]</figcaption>
-      </figure>
-      <div class="approach__quote">
-        <p>Hledáme příčinu, ne jen následek.</p>
-      </div>
-    </div>
 
-    <div class="rv rv-d1">
-      <p class="eyebrow">Náš přístup</p>
-      <h2 class="h2 head">Nechceme jen opravovat následky.</h2>
-      <div class="lead" style="margin-top:1.5rem">
-        <p>
-          Kazy, zánět dásní ani zubní kámen nevznikají ze dne na den. Proto se nesoustředíme
-          pouze na jejich odstranění.
-        </p>
-        <p>
-          Pomáháme pacientům pochopit, co se v jejich ústech děje a co mohou sami každý den
-          ovlivnit. Výsledkem je dlouhodobě zdravější chrup a menší potřeba opakovaných zákroků.
-        </p>
-      </div>
-
-      <ol class="steps">
-        <li class="step">
-          <span class="step__num">01</span>
-          <span class="step__name">Pochopit</span>
-          <span class="step__desc">Vysvětlíme, proč problém vznikl a co ho udržuje.</span>
-        </li>
-        <li class="step">
-          <span class="step__num">02</span>
-          <span class="step__name">Naučit</span>
-          <span class="step__desc">Ukážeme techniku a pomůcky, které dávají smysl právě vám.</span>
-        </li>
-        <li class="step">
-          <span class="step__num">03</span>
-          <span class="step__name">Procvičit</span>
-          <span class="step__desc">Čištění si prakticky vyzkoušíte přímo u nás.</span>
-        </li>
-        <li class="step">
-          <span class="step__num">04</span>
-          <span class="step__name">Udržet</span>
-          <span class="step__desc">Při dalších návštěvách postup kontrolujeme a doladíme.</span>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- ============================= ITOP ============================= -->
 <section class="section section--navy" id="itop">
   <div class="container">
     <div class="itop__head">
@@ -803,134 +196,142 @@ h3.h3{font-size:var(--fs-h3)}
       </div>
       <div class="rv rv-d1">
         <p class="lead">
-          ITOP je individuální praktický nácvik domácí péče přizpůsobený přímo vašim zubům.
-          Každý má jinou anatomii, jiné mezizubní prostory i jiné návyky — proto nestačí
-          obecná rada „čistěte si zuby lépe“.
+          ITOP je individuální praktický nácvik domácí péče přizpůsobený právě vašim zubům.
+          Nejde jen o teorii — správnou techniku si během návštěvy skutečně vyzkoušíte.
         </p>
+        <a class="btn btn--light" href="itop.html" style="margin-top:1.75rem"><span>Více o ITOP</span></a>
       </div>
     </div>
 
-    <div class="itop-grid">
+    <div class="itop-grid itop-grid--3">
       <article class="itop-card rv">
         <svg class="arc itop-card__arc" viewBox="0 0 44 22" aria-hidden="true"><path d="M1 20 C 7 5 37 5 43 20"/></svg>
         <span class="itop-card__num">01</span>
-        <h3>Zjistíme, kde vzniká problém</h3>
-        <p>Společně se podíváme, kde se plak nejvíce drží a která místa se při běžném čištění vynechávají.</p>
+        <h3>Poznáme problém</h3>
+        <p>Ukážeme vám místa, která při domácí péči potřebují více pozornosti.</p>
       </article>
       <article class="itop-card rv rv-d1">
         <svg class="arc itop-card__arc" viewBox="0 0 44 22" aria-hidden="true"><path d="M1 20 C 7 5 37 5 43 20"/></svg>
         <span class="itop-card__num">02</span>
-        <h3>Vybereme vhodné pomůcky</h3>
-        <p>Kartáček, mezizubní kartáčky i další pomůcky volíme podle konkrétní situace v ústech, ne podle šablony.</p>
+        <h3>Naučíme techniku</h3>
+        <p>Vybereme vhodné pomůcky a správné používání si prakticky nacvičíte.</p>
       </article>
       <article class="itop-card rv rv-d2">
         <svg class="arc itop-card__arc" viewBox="0 0 44 22" aria-hidden="true"><path d="M1 20 C 7 5 37 5 43 20"/></svg>
         <span class="itop-card__num">03</span>
-        <h3>Techniku si vyzkoušíte</h3>
-        <p>Nejen vysvětlujeme. Správné čištění si během návštěvy prakticky nacvičíte pod vedením hygienistky.</p>
+        <h3>Vytvoříme návyk</h3>
+        <p>Při dalších návštěvách techniku postupně upravujeme a zdokonalujeme.</p>
       </article>
-      <article class="itop-card rv rv-d3">
-        <svg class="arc itop-card__arc" viewBox="0 0 44 22" aria-hidden="true"><path d="M1 20 C 7 5 37 5 43 20"/></svg>
-        <span class="itop-card__num">04</span>
-        <h3>Postupně vytvoříme návyk</h3>
-        <p>Při dalších návštěvách techniku kontrolujeme, upravujeme a zdokonalujeme. Cílem není dokonalost hned napoprvé.</p>
-      </article>
-    </div>
-
-    <div class="pull rv">
-      <svg class="arc rule-arc" viewBox="0 0 120 16" aria-hidden="true"><path d="M1 14 C 22 2 98 2 119 14"/></svg>
-      <p>Naším cílem není čistit vaše zuby celý život za vás. Chceme vám dát znalosti a návyky, díky kterým se o ně budete umět starat sami.</p>
     </div>
   </div>
 </section>
-<!-- =========================== SLUŽBY ============================ -->
+
 <section class="section" id="sluzby">
   <div class="container">
     <div class="rv">
       <p class="eyebrow">Naše péče</p>
       <h2 class="h2 head">Dvě oblasti péče. Jeden společný cíl.</h2>
-      <p class="lead" style="margin-top:1.25rem">
-        Zubní lékař i dentální hygiena u nás pracují se stejným záměrem — zachovat vám
-        vlastní zdravé zuby co nejdéle. K oběma se objednáváte samostatně.
-      </p>
     </div>
 
-    <div class="services">
-      <article class="service rv">
-        <figure class="photo service__photo" role="img" aria-label="Ošetření u zubního lékaře">
-          <!-- <img src="img/zubni-lekar.jpg" alt="Ošetření u zubního lékaře v Zubní korunce" loading="lazy" decoding="async"> -->
-          <figcaption class="photo__tag">Foto — ordinace lékaře<br>[DOPLNIT]</figcaption>
-        </figure>
-        <div class="service__body">
+    <div class="duo">
+      <article class="duo__card rv">
+        <figure class="photo " role="img" aria-label="Ošetření u zubního lékaře v Zubní korunce">
+    <!-- <img src="img/zubni-lekar.jpg" alt="Ošetření u zubního lékaře v Zubní korunce" loading="lazy" decoding="async"> -->
+    <figcaption class="photo__tag">Foto — ordinace lékaře<br>[DOPLNIT]</figcaption>
+  </figure>
+        <div class="duo__body">
           <p class="eyebrow">Zubní lékař</p>
           <h3>Stomatologická péče</h3>
-          <p>
-            Komplexní péče zaměřená na zdraví, funkci a dlouhodobé zachování vlastních zubů.
-            Vždy vysvětlíme, co doporučujeme a proč.
-          </p>
-          <!-- Seznam výkonů je snadno editovatelný — upravte podle skutečné nabídky ordinace -->
-          <ul class="service__list">
-            <li>Preventivní prohlídky</li>
-            <li>Diagnostika</li>
-            <li>Léčba zubního kazu</li>
-            <li>Výplně</li>
-            <li>Endodontické ošetření</li>
-            <li>Protetická péče</li>
-            <li>Akutní ošetření</li>
-            <li>Další stomatologická péče</li>
-          </ul>
-          <a class="btn" href="#objednani"><span>Objednat k zubnímu lékaři</span></a>
+          <p>Komplexní stomatologická péče zaměřená na zdraví, funkci a dlouhodobé zachování vlastních zubů.</p>
+          <a class="link-gold" href="zubni-pece.html">Zubní péče <span class="chev" aria-hidden="true">→</span></a>
         </div>
       </article>
 
-      <article class="service rv rv-d1" id="sluzby-hygiena">
-        <figure class="photo service__photo" role="img" aria-label="Dentální hygiena">
-          <!-- <img src="img/dentalni-hygiena.jpg" alt="Dentální hygiena v Zubní korunce" loading="lazy" decoding="async"> -->
-          <figcaption class="photo__tag">Foto — dentální hygiena<br>[DOPLNIT]</figcaption>
-        </figure>
-        <div class="service__body">
+      <article class="duo__card rv rv-d1">
+        <figure class="photo " role="img" aria-label="Dentální hygiena v Zubní korunce">
+    <!-- <img src="img/dentalni-hygiena.jpg" alt="Dentální hygiena v Zubní korunce" loading="lazy" decoding="async"> -->
+    <figcaption class="photo__tag">Foto — dentální hygiena<br>[DOPLNIT]</figcaption>
+  </figure>
+        <div class="duo__body">
           <p class="eyebrow">Dentální hygiena</p>
           <h3>Prevence a nácvik péče</h3>
-          <p>
-            Dentální hygiena u nás není pouze odstranění zubního kamene. Je součástí
-            dlouhodobé prevence a domácí péče, kterou si odnesete s sebou.
-          </p>
-          <ul class="service__list">
-            <li>Odstranění zubního kamene a povlaků</li>
-            <li>Péče o dásně</li>
-            <li>Prevence zánětu</li>
-            <li>Odstranění pigmentací</li>
-            <li>Individuální nácvik čištění</li>
-            <li>Výběr mezizubních pomůcek</li>
-            <li>ITOP — individuálně trénovaná orální prevence</li>
-          </ul>
-          <a class="btn" href="#objednani"><span>Objednat na dentální hygienu</span></a>
+          <p>Profesionální dentální hygiena propojená s prevencí a individuálním nácvikem domácí péče.</p>
+          <a class="link-gold" href="dentalni-hygiena.html">Dentální hygiena <span class="chev" aria-hidden="true">→</span></a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ========================= OBJEDNÁVÁNÍ ========================= -->
-<section class="section section--ivory" id="objednani">
+<section class="section section--surface" id="tym">
+  <div class="container">
+    <div class="rv">
+      <p class="eyebrow">Náš tým</p>
+      <h2 class="h2 head">Lidé, kterým svěříte svůj úsměv.</h2>
+    </div>
+
+    <div class="team team--slim">
+      <article class="member rv">
+        <figure class="photo member__photo" role="img" aria-label="Zubní lékař — Zubní korunka">
+    <!-- <img src="img/tym-lekar.jpg" alt="Zubní lékař — Zubní korunka" loading="lazy" decoding="async"> -->
+    <figcaption class="photo__tag">Portrét<br>[DOPLNIT]</figcaption>
+  </figure>
+        <p class="member__role">Zubní lékař</p>
+        <h3>[DOPLNIT jméno]</h3>
+        <p>Než začne pracovat, chce rozumět příčině — a chce, abyste jí rozuměli i vy.</p>
+      </article>
+
+      <article class="member rv rv-d1">
+        <figure class="photo member__photo" role="img" aria-label="Dentální hygienistka — Zubní korunka">
+    <!-- <img src="img/tym-hygienistka.jpg" alt="Dentální hygienistka — Zubní korunka" loading="lazy" decoding="async"> -->
+    <figcaption class="photo__tag">Portrét<br>[DOPLNIT]</figcaption>
+  </figure>
+        <p class="member__role">Dentální hygienistka</p>
+        <h3>[DOPLNIT jméno]</h3>
+        <p>Věnuje se prevenci a individuálnímu nácviku domácí péče metodou ITOP.</p>
+      </article>
+    </div>
+
+    <div class="btn-row rv">
+      <a class="btn btn--ghost" href="tym.html"><span>Poznejte náš tým</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="quick">
+  <div class="container">
+    <div class="quick__row">
+      <a class="quick__item rv" href="cenik.html">
+        <span><strong>Zobrazit ceník</strong><span>Zubní péče i dentální hygiena</span></span>
+        <span class="chev" aria-hidden="true">→</span>
+      </a>
+      <a class="quick__item rv rv-d1" href="pro-pacienty.html">
+        <span><strong>Časté otázky pacientů</strong><span>První návštěva a praktické informace</span></span>
+        <span class="chev" aria-hidden="true">→</span>
+      </a>
+      <a class="quick__item rv rv-d2" href="galerie.html">
+        <span><strong>Galerie kliniky</strong><span>Prostředí, ve kterém se dýchá klidněji</span></span>
+        <span class="chev" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--navy" id="objednani">
   <div class="container">
     <div class="rv">
       <p class="eyebrow">Objednání</p>
       <h2 class="h2 head">Kam se chcete objednat?</h2>
-      <p class="lead" style="margin-top:1.25rem">
-        Návštěvu u zubního lékaře a dentální hygienu vedeme odděleně. Vyberte prosím,
-        o kterou část péče máte zájem.
-      </p>
     </div>
 
-    <div class="book">
+    <div class="book book--navy">
       <article class="book-card rv">
         <p class="eyebrow">Zubní lékař</p>
         <h3>Objednat k zubnímu lékaři</h3>
         <p>Preventivní prohlídka, ošetření zubu nebo akutní potíže.</p>
         <a class="tel" href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a>
         <div class="btn-row">
-          <a class="btn" href="tel:+420XXXXXXXXX"><span>Zavolat</span></a>
+          <a class="btn btn--gold" href="tel:+420XXXXXXXXX"><span>Zavolat</span></a>
         </div>
       </article>
 
@@ -940,19 +341,134 @@ h3.h3{font-size:var(--fs-h3)}
         <p>Hygiena, péče o dásně a individuální nácvik čištění včetně ITOP.</p>
         <a class="tel" href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a>
         <div class="btn-row">
-          <a class="btn" href="tel:+420XXXXXXXXX"><span>Zavolat</span></a>
+          <a class="btn btn--gold" href="tel:+420XXXXXXXXX"><span>Zavolat</span></a>
         </div>
       </article>
     </div>
 
-    <p class="book-note rv">
-      Pro zubní ordinaci i dentální hygienu používáme společné telefonní číslo.
-      Při objednání nám prosím jen řekněte, o kterou část péče máte zájem.
+    <p class="note--navy rv">
+      Pro zubní ordinaci i dentální hygienu používáme jedno společné telefonní číslo.
+      Při objednání pouze uveďte, o kterou část péče máte zájem.
+      Nechcete volat? <a href="#" data-modal-open="lekar">Napište nám</a> a ozveme se vám.
     </p>
+  </div>
+</section>
 
-    <!-- Formulář: action doplňte podle hostingu (např. odeslat.php na Wedosu) -->
-    <form class="form rv" id="objednavka" action="#" method="post" novalidate>
-      <p class="eyebrow">Nebo napište, ozveme se</p>
+<section class="section section--surface" id="kontakt">
+  <div class="container contact">
+    <div class="rv">
+      <p class="eyebrow">Kontakt</p>
+      <h2 class="h2 head">Zubní korunka</h2>
+
+      <div class="contact__list">
+        <div class="contact__row">
+          <span class="contact__k">Adresa</span>
+          <span class="contact__v">[DOPLNIT]<span>[DOPLNIT město a PSČ]</span></span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__k">Telefon</span>
+          <span class="contact__v"><a href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a><span>Společné číslo pro ordinaci i dentální hygienu</span></span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__k">E-mail</span>
+          <span class="contact__v"><a href="mailto:[DOPLNIT]">[DOPLNIT]</a></span>
+        </div>
+        <div class="contact__row">
+          <span class="contact__k">Ordinační doba</span>
+          <span class="contact__v">[DOPLNIT]<span>Pondělí – pátek [DOPLNIT]<br>Sobota, neděle: zavřeno</span></span>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn" href="tel:+420XXXXXXXXX"><span>Zavolat</span></a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps" target="_blank" rel="noopener"><span>Navigovat</span></a>
+      </div>
+    </div>
+
+    <div class="rv rv-d1">
+      <div class="map">
+        <!-- Google Maps: vložte embed iframe s adresou ordinace
+        <iframe src="https://www.google.com/maps/embed?pb=[DOPLNIT]" title="Mapa — Zubní korunka" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <p class="map__ph"><strong>Mapa</strong>[DOPLNIT embed kód Google Maps]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 34 26" aria-hidden="true">
+        <path d="M2 25 C2 10 8.5 2 17 2 C25.5 2 32 10 32 25" stroke-linecap="round"/>
+        <path d="M9.5 25 C9.5 17 12.5 12 17 12 C21.5 12 24.5 17 24.5 25" opacity=".55" stroke-linecap="round"/>
+      </svg>
+          <span class="brand__name">Zubní korunka</span>
+        </a>
+        <p class="footer__claim">Moderní zubní péče postavená na prevenci.</p>
+      </div>
+
+      <nav aria-label="Navigace v patičce">
+        <h4>Klinika</h4>
+        <ul>
+          <li><a href="index.html#o-nas">O nás</a></li>
+          <li><a href="itop.html">Prevence &amp; ITOP</a></li>
+          <li><a href="zubni-pece.html">Zubní péče</a></li>
+          <li><a href="dentalni-hygiena.html">Dentální hygiena</a></li>
+          <li><a href="tym.html">Náš tým</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>[DOPLNIT adresa]</li>
+          <li><a href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a></li>
+          <li><a href="mailto:[DOPLNIT]">[DOPLNIT e-mail]</a></li>
+          <li><a href="cenik.html">Ceník</a></li>
+          <li><a href="pro-pacienty.html">Pro pacienty</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Ordinační doba</h4>
+        <ul>
+          <li>Pondělí – pátek: [DOPLNIT]</li>
+          <li>Sobota, neděle: zavřeno</li>
+        </ul>
+        <a class="btn btn--gold btn--sm" href="index.html#objednani" style="margin-top:1.25rem"><span>Objednat se</span></a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="rok">2026</span> Zubní korunka</span>
+      <div class="footer__legal">
+        <a href="#">Ochrana osobních údajů</a>
+        <a href="#">Cookies</a>
+        <a href="#">GDPR</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Rychlý kontakt">
+  <a href="tel:+420XXXXXXXXX">Zavolat</a>
+  <a class="is-gold" href="index.html#objednani">Objednat se</a>
+</div>
+
+<div class="modal" id="modal-form" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal__bg" data-modal-close></div>
+  <div class="modal__box">
+    <button class="modal__close" data-modal-close aria-label="Zavřít formulář">&times;</button>
+    <p class="eyebrow">Objednání</p>
+    <h2 class="h3" id="modal-title" style="font-size:1.85rem;color:var(--navy-900)">Napište nám, ozveme se</h2>
+
+    <!-- action doplňte podle hostingu, např. odeslat.php -->
+    <form class="form" action="#" method="post" novalidate>
       <div class="form__grid">
         <div class="field field--full">
           <label id="lbl-typ">Chci se objednat</label>
@@ -985,469 +501,13 @@ h3.h3{font-size:var(--fs-h3)}
         </div>
       </div>
       <div class="form__foot">
-        <button class="btn" type="submit"><span>Odeslat poptávku</span></button>
+        <button class="btn" type="submit"><span>Odeslat</span></button>
         <p class="form__note">Odesláním souhlasíte se zpracováním osobních údajů za účelem vyřízení objednávky. [DOPLNIT odkaz na zásady]</p>
       </div>
     </form>
   </div>
-</section>
-<!-- ============================= TÝM ============================== -->
-<section class="section" id="tym">
-  <div class="container">
-    <div class="rv">
-      <p class="eyebrow">Náš tým</p>
-      <h2 class="h2 head">Lidé, kterým svěříte svůj úsměv.</h2>
-    </div>
-
-    <div class="team">
-      <article class="member rv">
-        <figure class="photo member__photo" role="img" aria-label="Portrét zubního lékaře">
-          <!-- <img src="img/tym-lekar.jpg" alt="Zubní lékař — Zubní korunka" loading="lazy" decoding="async"> -->
-          <figcaption class="photo__tag">Portrét<br>[DOPLNIT]</figcaption>
-        </figure>
-        <p class="member__role">Zubní lékař</p>
-        <h3>[DOPLNIT jméno]</h3>
-        <p class="lead">
-          Ošetření staví na klidu a vysvětlení. Než začne pracovat, chce rozumět tomu,
-          co problém způsobilo — a chce, abyste tomu rozuměli i vy. Práci vede tak,
-          aby vlastní zub vydržel co nejdéle.
-        </p>
-      </article>
-
-      <article class="member rv rv-d1">
-        <figure class="photo member__photo" role="img" aria-label="Portrét dentální hygienistky">
-          <!-- <img src="img/tym-hygienistka.jpg" alt="Dentální hygienistka — Zubní korunka" loading="lazy" decoding="async"> -->
-          <figcaption class="photo__tag">Portrét<br>[DOPLNIT]</figcaption>
-        </figure>
-        <p class="member__role">Dentální hygienistka</p>
-        <h3>[DOPLNIT jméno]</h3>
-        <p class="lead">
-          Věnuje se prevenci a individuálnímu nácviku domácí péče metodou ITOP.
-          Nemoralizuje — společně s vámi najde místa, která potřebují víc pozornosti,
-          a ukáže vám, jak na ně jednoduše dosáhnout.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ======================== PRVNÍ NÁVŠTĚVA ======================= -->
-<section class="section section--surface" id="pro-pacienty">
-  <div class="container">
-    <div class="rv">
-      <p class="eyebrow">Pro pacienty</p>
-      <h2 class="h2 head">Poprvé u nás?</h2>
-      <p class="lead" style="margin-top:1.25rem">
-        Nechceme, abyste měli pocit, že jste jen číslo v kalendáři. První návštěva
-        má proto jasný a klidný průběh.
-      </p>
-    </div>
-
-    <ol class="visit">
-      <li class="visit__item rv">
-        <span class="visit__dot" aria-hidden="true"></span>
-        <span class="n">01</span>
-        <h3>Objednání</h3>
-        <p>Vyberete si zubní péči nebo dentální hygienu a domluvíme termín.</p>
-      </li>
-      <li class="visit__item rv rv-d1">
-        <span class="visit__dot" aria-hidden="true"></span>
-        <span class="n">02</span>
-        <h3>Seznámení</h3>
-        <p>Nejdřív chceme pochopit aktuální stav a to, co potřebujete řešit.</p>
-      </li>
-      <li class="visit__item rv rv-d2">
-        <span class="visit__dot" aria-hidden="true"></span>
-        <span class="n">03</span>
-        <h3>Vyšetření nebo hygiena</h3>
-        <p>Podle typu návštěvy proběhne vyšetření, nebo dentální hygiena.</p>
-      </li>
-      <li class="visit__item rv rv-d3">
-        <span class="visit__dot" aria-hidden="true"></span>
-        <span class="n">04</span>
-        <h3>Další plán</h3>
-        <p>Vysvětlíme, co doporučujeme dál, proč — a co můžete ovlivnit doma.</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ============================ CENÍK ============================ -->
-<section class="section" id="cenik">
-  <div class="container">
-    <div class="rv">
-      <p class="eyebrow">Ceník</p>
-      <h2 class="h2 head">Přehledně a bez překvapení.</h2>
-      <p class="lead" style="margin-top:1.25rem">
-        Cenu vždy vysvětlíme dopředu. Rozsah ošetření se u každého pacienta liší,
-        proto konkrétní částku potvrdíme po vyšetření.
-      </p>
-    </div>
-
-    <div class="price-wrap">
-      <!-- Ceny doplňte přepsáním textu ve span.val -->
-      <div class="price-col rv">
-        <h3>Zubní péče</h3>
-        <ul class="price-list">
-          <li><span class="item">Vstupní vyšetření</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Preventivní prohlídka</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Léčba zubního kazu</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Výplň</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Endodontické ošetření</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Protetická péče</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Akutní ošetření</span><span class="val">Cena bude doplněna</span></li>
-        </ul>
-      </div>
-
-      <div class="price-col rv rv-d1">
-        <h3>Dentální hygiena</h3>
-        <ul class="price-list">
-          <li><span class="item">Vstupní dentální hygiena</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Opakovaná dentální hygiena</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Odstranění pigmentací</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Péče o dásně</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">ITOP — nácvik domácí péče</span><span class="val">Cena bude doplněna</span></li>
-          <li><span class="item">Kontrolní návštěva</span><span class="val">Cena bude doplněna</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="price-foot rv">[DOPLNIT informaci o úhradách a platebních podmínkách. Ceník je informativní, konečná cena vychází z rozsahu ošetření.]</p>
-  </div>
-</section>
-<!-- =========================== GALERIE =========================== -->
-<section class="section section--ivory" id="galerie">
-  <div class="container">
-    <div class="rv">
-      <p class="eyebrow">Galerie</p>
-      <h2 class="h2 head">Prostředí, ve kterém se dýchá klidněji.</h2>
-    </div>
-
-    <div class="gallery">
-      <figure class="photo g1 rv" role="img" aria-label="Ordinace Zubní korunka">
-        <!-- <img src="img/galerie-01.jpg" alt="Ordinace Zubní korunka" loading="lazy" decoding="async"> -->
-        <figcaption class="photo__tag">Ordinace<br>[DOPLNIT]</figcaption>
-      </figure>
-      <figure class="photo g2 rv rv-d1" role="img" aria-label="Čekárna">
-        <!-- <img src="img/galerie-02.jpg" alt="Čekárna Zubní korunka" loading="lazy" decoding="async"> -->
-        <figcaption class="photo__tag">Čekárna<br>[DOPLNIT]</figcaption>
-      </figure>
-      <figure class="photo g3 rv rv-d2" role="img" aria-label="Detail vybavení">
-        <!-- <img src="img/galerie-03.jpg" alt="Detail vybavení ordinace" loading="lazy" decoding="async"> -->
-        <figcaption class="photo__tag">Detail<br>[DOPLNIT]</figcaption>
-      </figure>
-      <figure class="photo g4 rv rv-d3" role="img" aria-label="Pomůcky pro domácí péči">
-        <!-- <img src="img/galerie-04.jpg" alt="Pomůcky pro domácí péči" loading="lazy" decoding="async"> -->
-        <figcaption class="photo__tag">Pomůcky<br>[DOPLNIT]</figcaption>
-      </figure>
-      <figure class="photo g5 rv" role="img" aria-label="Práce dentální hygienistky">
-        <!-- <img src="img/galerie-05.jpg" alt="Práce dentální hygienistky" loading="lazy" decoding="async"> -->
-        <figcaption class="photo__tag">Hygiena<br>[DOPLNIT]</figcaption>
-      </figure>
-      <figure class="photo g6 rv rv-d1" role="img" aria-label="Recepce a vstup do kliniky">
-        <!-- <img src="img/galerie-06.jpg" alt="Recepce a vstup do kliniky" loading="lazy" decoding="async"> -->
-        <figcaption class="photo__tag">Recepce<br>[DOPLNIT]</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============================= FAQ ============================= -->
-<section class="section" id="faq">
-  <div class="container faq">
-    <div class="rv">
-      <p class="eyebrow">Časté dotazy</p>
-      <h2 class="h2">Na co se pacienti ptají nejčastěji.</h2>
-      <p class="lead" style="margin-top:1.25rem">
-        Nenašli jste odpověď? Zavolejte nám, rádi vše vysvětlíme.
-      </p>
-      <a class="link-gold" href="#kontakt" style="margin-top:1rem">Kontaktovat ordinaci <span class="chev" aria-hidden="true">→</span></a>
-    </div>
-
-    <div class="acc rv rv-d1" id="acc">
-      <div class="acc__item">
-        <h3><button class="acc__btn" aria-expanded="false" aria-controls="p1" id="b1">Přijímáte nové pacienty?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-        <div class="acc__panel" id="p1" role="region" aria-labelledby="b1"><div>
-          [DOPLNIT aktuální informaci o kapacitě ordinace. Aktuální stav vám rádi sdělíme telefonicky na společném čísle kliniky.]
-        </div></div>
-      </div>
-
-      <div class="acc__item">
-        <h3><button class="acc__btn" aria-expanded="false" aria-controls="p2" id="b2">Jak se objednám?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-        <div class="acc__panel" id="p2" role="region" aria-labelledby="b2"><div>
-          Telefonicky prostřednictvím společného čísla kliniky. Při objednání pouze uveďte,
-          zda se chcete objednat k zubnímu lékaři, nebo na dentální hygienu — termíny vedeme odděleně.
-        </div></div>
-      </div>
-
-      <div class="acc__item">
-        <h3><button class="acc__btn" aria-expanded="false" aria-controls="p3" id="b3">Mohu se objednat pouze na dentální hygienu?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-        <div class="acc__panel" id="p3" role="region" aria-labelledby="b3"><div>
-          Ano. Dentální hygiena je samostatná návštěva a můžete se na ni objednat i bez ošetření u zubního lékaře.
-        </div></div>
-      </div>
-
-      <div class="acc__item">
-        <h3><button class="acc__btn" aria-expanded="false" aria-controls="p4" id="b4">Co je ITOP?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-        <div class="acc__panel" id="p4" role="region" aria-labelledby="b4"><div>
-          ITOP znamená individuálně trénovanou orální prevenci. Zjednodušeně jde o praktický
-          nácvik domácí péče přizpůsobený vašim zubům — společně najdeme místa, která se při
-          čištění vynechávají, vybereme vhodné pomůcky a techniku si přímo u nás vyzkoušíte.
-        </div></div>
-      </div>
-
-      <div class="acc__item">
-        <h3><button class="acc__btn" aria-expanded="false" aria-controls="p5" id="b5">Jak často mám chodit na dentální hygienu?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-        <div class="acc__panel" id="p5" role="region" aria-labelledby="b5"><div>
-          Interval je individuální. Vychází ze stavu zubů a dásní, ze sklonu k tvorbě zubního
-          kamene a z toho, jak se daří domácí péče. Vhodný odstup vám doporučíme po vyšetření
-          a časem ho podle výsledků upravíme.
-        </div></div>
-      </div>
-
-      <div class="acc__item">
-        <h3><button class="acc__btn" aria-expanded="false" aria-controls="p6" id="b6">Co si mám vzít na první návštěvu?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-        <div class="acc__panel" id="p6" role="region" aria-labelledby="b6"><div>
-          Doklad totožnosti a kartičku pojišťovny. Pokud máte k dispozici starší snímky nebo
-          zprávy z předchozí ordinace, přineste je s sebou. Užitečné je vzít i kartáček
-          a pomůcky, které běžně používáte — hodí se při nácviku domácí péče. [DOPLNIT případné další požadavky ordinace]
-        </div></div>
-      </div>
-
-      <div class="acc__item">
-        <h3><button class="acc__btn" aria-expanded="false" aria-controls="p7" id="b7">Je dentální hygiena bolestivá?<span class="acc__icon" aria-hidden="true"></span></button></h3>
-        <div class="acc__panel" id="p7" role="region" aria-labelledby="b7"><div>
-          Většina pacientů popisuje hygienu jako nepříjemnou spíš v místech, kde jsou dásně
-          zanícené nebo citlivé krčky. Postupujeme šetrně, tempo přizpůsobujeme a kdykoli
-          můžete říct, že chcete pauzu. S opakovanými návštěvami bývá průběh výrazně příjemnější,
-          protože se stav dásní zlepšuje.
-        </div></div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- =========================== KONTAKT =========================== -->
-<section class="section section--surface" id="kontakt">
-  <div class="container contact">
-    <div class="rv">
-      <p class="eyebrow">Kontakt</p>
-      <h2 class="h2 head">Zubní korunka</h2>
-
-      <div class="contact__list">
-        <div class="contact__row">
-          <span class="contact__k">Adresa</span>
-          <span class="contact__v">[DOPLNIT]<span>[DOPLNIT město a PSČ]</span></span>
-        </div>
-        <div class="contact__row">
-          <span class="contact__k">Telefon</span>
-          <span class="contact__v"><a href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a><span>Společné číslo pro ordinaci i dentální hygienu</span></span>
-        </div>
-        <div class="contact__row">
-          <span class="contact__k">E-mail</span>
-          <span class="contact__v"><a href="mailto:[DOPLNIT]">[DOPLNIT]</a></span>
-        </div>
-        <div class="contact__row">
-          <span class="contact__k">Ordinační doba</span>
-          <span class="contact__v">[DOPLNIT]<span>Pondělí – pátek [DOPLNIT]<br>Sobota, neděle: zavřeno</span></span>
-        </div>
-      </div>
-
-      <div class="btn-row">
-        <a class="btn" href="tel:+420XXXXXXXXX"><span>Zavolat</span></a>
-        <a class="btn btn--ghost" href="mailto:[DOPLNIT]"><span>Napsat e-mail</span></a>
-        <a class="btn btn--ghost" href="https://www.google.com/maps" target="_blank" rel="noopener"><span>Navigovat</span></a>
-      </div>
-    </div>
-
-    <div class="rv rv-d1">
-      <div class="map">
-        <!-- Google Maps: vložte embed iframe s adresou ordinace
-        <iframe src="https://www.google.com/maps/embed?pb=[DOPLNIT]" title="Mapa — Zubní korunka" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-        <p class="map__ph"><strong>Mapa</strong>[DOPLNIT embed kód Google Maps]</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========================= FINÁLNÍ CTA ========================= -->
-<section class="section section--navy final">
-  <svg class="arc arc-big" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 395 C 150 60 850 60 1000 395"/>
-    <path d="M80 398 C 220 130 780 130 920 398" opacity=".5"/>
-  </svg>
-  <div class="container final__inner">
-    <h2 class="rv">Začněte <em>u prevence.</em></h2>
-    <p class="lead rv rv-d1">Ať už potřebujete zubního lékaře, nebo dentální hygienu, jsme tu pro vás.</p>
-    <div class="btn-row rv rv-d2">
-      <a class="btn btn--gold" href="#objednani"><span>Objednat k zubnímu lékaři</span></a>
-      <a class="btn btn--light" href="#objednani"><span>Objednat na dentální hygienu</span></a>
-    </div>
-    <p class="final__tel rv rv-d3">Společné telefonní číslo: <a href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a></p>
-  </div>
-</section>
-
-</main>
-
-<!-- ============================ FOOTER =========================== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div>
-        <a class="brand" href="#top">
-          <svg class="brand__mark" viewBox="0 0 34 26" aria-hidden="true">
-            <path d="M2 25 C2 10 8.5 2 17 2 C25.5 2 32 10 32 25" stroke-linecap="round"/>
-            <path d="M9.5 25 C9.5 17 12.5 12 17 12 C21.5 12 24.5 17 24.5 25" opacity=".55" stroke-linecap="round"/>
-          </svg>
-          <span class="brand__name">Zubní korunka</span>
-        </a>
-        <p class="footer__claim">Moderní zubní péče postavená na prevenci.</p>
-      </div>
-
-      <nav aria-label="Navigace v patičce">
-        <h4>Klinika</h4>
-        <ul>
-          <li><a href="#o-nas">O nás</a></li>
-          <li><a href="#itop">Prevence &amp; ITOP</a></li>
-          <li><a href="#sluzby">Zubní péče</a></li>
-          <li><a href="#sluzby-hygiena">Dentální hygiena</a></li>
-          <li><a href="#tym">Náš tým</a></li>
-          <li><a href="#cenik">Ceník</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <h4>Kontakt</h4>
-        <ul>
-          <li>[DOPLNIT adresa]</li>
-          <li><a href="tel:+420XXXXXXXXX">+420 XXX XXX XXX</a></li>
-          <li><a href="mailto:[DOPLNIT]">[DOPLNIT e-mail]</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Ordinační doba</h4>
-        <ul>
-          <li>Pondělí – pátek: [DOPLNIT]</li>
-          <li>Sobota, neděle: zavřeno</li>
-        </ul>
-        <a class="btn btn--gold btn--sm" href="#objednani" style="margin-top:1.25rem"><span>Objednat se</span></a>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <span>© <span id="rok">2026</span> Zubní korunka</span>
-      <div class="footer__legal">
-        <a href="#">Ochrana osobních údajů</a>
-        <a href="#">Cookies</a>
-        <a href="#">GDPR</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- ======================= MOBILNÍ LIŠTA ======================== -->
-<div class="mbar" aria-label="Rychlý kontakt">
-  <a href="tel:+420XXXXXXXXX">Zavolat</a>
-  <a class="is-gold" href="#objednani">Objednat se</a>
 </div>
 
-<script>
-(function(){
-  "use strict";
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  /* --- Sticky header --- */
-  var header = document.getElementById("header");
-  var onScroll = function(){
-    header.classList.toggle("is-stuck", window.scrollY > 24);
-  };
-  onScroll();
-  window.addEventListener("scroll", onScroll, {passive:true});
-
-  /* --- Mobilní menu --- */
-  var burger = document.getElementById("burger");
-  var mnav = document.getElementById("mobile-nav");
-  var toggleMenu = function(open){
-    burger.setAttribute("aria-expanded", String(open));
-    burger.setAttribute("aria-label", open ? "Zavřít menu" : "Otevřít menu");
-    mnav.classList.toggle("is-open", open);
-    document.body.style.overflow = open ? "hidden" : "";
-  };
-  burger.addEventListener("click", function(){
-    toggleMenu(burger.getAttribute("aria-expanded") !== "true");
-  });
-  mnav.addEventListener("click", function(e){
-    if (e.target.closest("a")) toggleMenu(false);
-  });
-  document.addEventListener("keydown", function(e){
-    if (e.key === "Escape" && mnav.classList.contains("is-open")) { toggleMenu(false); burger.focus(); }
-  });
-
-  /* --- Reveal při scrollování --- */
-  var items = document.querySelectorAll(".rv");
-  if (reduce || !("IntersectionObserver" in window)) {
-    items.forEach(function(el){ el.classList.add("in"); });
-  } else {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
-      });
-    }, {rootMargin:"0px 0px -8% 0px", threshold:0.12});
-    items.forEach(function(el){ io.observe(el); });
-  }
-
-  /* --- FAQ accordion --- */
-  var accBtns = document.querySelectorAll(".acc__btn");
-  accBtns.forEach(function(btn){
-    var panel = document.getElementById(btn.getAttribute("aria-controls"));
-    btn.addEventListener("click", function(){
-      var open = btn.getAttribute("aria-expanded") === "true";
-      accBtns.forEach(function(other){
-        if (other === btn) return;
-        var op = document.getElementById(other.getAttribute("aria-controls"));
-        other.setAttribute("aria-expanded","false");
-        op.style.height = "0px";
-      });
-      btn.setAttribute("aria-expanded", String(!open));
-      panel.style.height = open ? "0px" : panel.firstElementChild.offsetHeight + "px";
-    });
-  });
-  window.addEventListener("resize", function(){
-    accBtns.forEach(function(btn){
-      if (btn.getAttribute("aria-expanded") === "true"){
-        var p = document.getElementById(btn.getAttribute("aria-controls"));
-        p.style.height = p.firstElementChild.offsetHeight + "px";
-      }
-    });
-  });
-
-  /* --- Aktivní položka navigace --- */
-  var links = Array.prototype.slice.call(document.querySelectorAll(".nav a"));
-  var targets = links.map(function(a){ return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
-  if ("IntersectionObserver" in window && targets.length){
-    var spy = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if (!en.isIntersecting) return;
-        links.forEach(function(a){
-          a.setAttribute("aria-current", a.getAttribute("href") === "#" + en.target.id ? "true" : "false");
-        });
-      });
-    }, {rootMargin:"-45% 0px -50% 0px"});
-    targets.forEach(function(t){ spy.observe(t); });
-  }
-
-  /* --- Předvyplnění typu objednání z tlačítek --- */
-  document.querySelectorAll('a[href="#objednani"]').forEach(function(a){
-    a.addEventListener("click", function(){
-      var t = a.textContent.toLowerCase();
-      if (t.indexOf("hygien") > -1) { document.getElementById("typ-hygiena").checked = true; }
-      else if (t.indexOf("lékař") > -1) { document.getElementById("typ-lekar").checked = true; }
-    });
-  });
-
-  /* --- Rok v patičce --- */
-  document.getElementById("rok").textContent = new Date().getFullYear();
-})();
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
